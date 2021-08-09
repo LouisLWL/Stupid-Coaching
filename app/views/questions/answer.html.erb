@@ -1,0 +1,8 @@
+<%= @answer %>
+  <% if @answer == 'Hello' %>
+    <p> Hello you </p>
+    <% elsif @answer == 'What time is it?' %>
+      <p>Now is <%= Time.now %></p>
+  <% end %>
+
+  <%= link_to "Wrong Input. Click here to try again", ask_path %>
